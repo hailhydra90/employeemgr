@@ -8,7 +8,7 @@ from functools import wraps
 app = Flask(__name__)
 
 #config
-app.config.from_object('config.BaseConfig')
+app.config.from_object(os.environ['APP_SETTINGS'])
 
 #create SQLAlchemy object
 db = SQLAlchemy(app)
