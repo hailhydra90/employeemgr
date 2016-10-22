@@ -6,7 +6,7 @@ class BlogPost(db.Model):
 
     id = db.Column(db.Integer,primary_key = True)
     title = db.Column(db.String, nullable=False)
-    description = db.Column(db.Integer, nullable=False)
+    description = db.Column(db.String, nullable=False)
 
     #constructor
     def __init__(self,title,description):
